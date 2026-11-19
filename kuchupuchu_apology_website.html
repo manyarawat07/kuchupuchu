@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe7ef">
+<title>For My Kuchupuchu ♡</title>
+<style>
+:root{--pink:#f6a9c4;--rose:#d95d8b;--deep:#8f365d;--cream:#fff8fa;--ink:#60394b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float{position:absolute;bottom:-40px;opacity:.55;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1}
+section{min-height:100svh;padding:82px 22px;display:flex;align-items:center;justify-content:center;text-align:center}
+.wrap{width:min(760px,100%);margin:auto}
+.hero{background:radial-gradient(circle at 50% 35%,#fff 0,#fff0f5 48%,#fbd5e2 100%);position:relative}
+.eyebrow{font:600 11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(44px,9vw,82px);line-height:.98;margin:22px 0;color:var(--deep);font-weight:normal}
+h2{font-size:clamp(32px,6vw,48px);font-weight:normal;color:var(--deep);margin:0 0 20px}
+p{font-size:18px;line-height:1.8}
+.sub{max-width:540px;margin:0 auto 30px;color:#81576a}
+.heart{font-size:58px;display:inline-block;animation:beat 1.4s infinite}
+@keyframes beat{50%{transform:scale(1.18)}}
+.btn{border:0;border-radius:999px;padding:15px 27px;background:var(--rose);color:white;box-shadow:0 9px 24px #d95d8b33;transition:.2s}
+.btn:hover{transform:translateY(-3px);background:var(--deep)}
+.btn.secondary{background:white;color:var(--deep);border:1px solid #efb7cb;box-shadow:none}
+.scroll{display:block;margin-top:52px;color:#a66b84;font:12px Arial,sans-serif;letter-spacing:2px}
+.card{background:#fff;border:1px solid #f6d5e1;border-radius:28px;padding:clamp(25px,5vw,48px);box-shadow:0 20px 60px #b85d7b12}
+.letter{font-size:19px;line-height:2;text-align:left;white-space:pre-line}
+.signature{font-style:italic;color:var(--rose);font-size:22px;margin-top:25px}
+.soft{background:linear-gradient(180deg,#fff7fa,#ffeaf1)}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.reason{background:#fff;border:1px solid #f4d0dd;border-radius:20px;padding:24px 16px;min-height:130px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;transition:.25s}
+.reason:hover{transform:translateY(-5px);box-shadow:0 12px 28px #b85d7b18}
+.reason span{font-size:28px}
+.reason strong{font-size:16px;font-weight:normal}
+.prompt{font-size:23px;margin:25px 0}
+.answer{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+#response{min-height:58px;color:var(--deep);font-size:18px;margin-top:24px}
+.envelope{width:190px;height:130px;margin:35px auto;position:relative;background:#f5b4ca;border-radius:8px;cursor:pointer;box-shadow:0 12px 30px #a94d7022;transition:.3s}
+.envelope:before{content:"";position:absolute;inset:0;background:#f9c8d8;clip-path:polygon(0 0,50% 58%,100% 0);z-index:2}
+.envelope:after{content:"♡";position:absolute;inset:35px 0 0;font-size:36px;color:#fff;z-index:3}
+.envelope:hover{transform:translateY(-5px)}
+.final-note{display:none;margin:20px auto 0;max-width:520px}
+.final-note.show{display:block;animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+footer{padding:28px;text-align:center;color:#b17b91;font-size:13px;position:relative;z-index:1}
+@media(max-width:520px){.reasons{grid-template-columns:1fr}.letter{font-size:17px}section{padding:70px 18px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<main>
+<section class="hero" id="home">
+ <div class="wrap">
+  <div class="heart">♡</div>
+  <div class="eyebrow">a little something from my heart</div>
+  <h1>Hey, my<br>kuchupuchu.</h1>
+  <p class="sub">I know things haven't felt right, and I made this little corner of the internet just for you. Will you hear me out?</p>
+  <button class="btn" onclick="document.querySelector('#letter').scrollIntoView()">Open my heart <span>♡</span></button>
+  <span class="scroll">SCROLL A LITTLE ↓</span>
+ </div>
+</section>
+<section id="letter">
+ <div class="wrap">
+  <div class="eyebrow">from me, with love</div>
+  <h2>A little apology</h2>
+  <div class="card">
+   <div class="letter">My kuchupuchu,
+
+I made a mistake, and I genuinely want to make things right. I'm sorry for the hurt I caused and for the moments when I may have made you feel anything less than loved and valued.
+
+I don't want to brush your feelings aside or make excuses. You matter to me, and what we share matters to me. I know that saying sorry doesn't magically fix everything, but I want my actions to show you that I mean it.
+
+I'm willing to listen, understand, and do better. You don't have to stop feeling upset just because I've apologised. Take the time you need.
+
+I just hope we can find our way back to the warmth, comfort, and happiness that feel like us.
+
+Thank you for being you. I'm really sorry, and I love you.</div>
+   <div class="signature">— your girl, always ♡</div>
+  </div>
+ </div>
+</section>
+<section class="soft" id="reasons">
+ <div class="wrap">
+  <div class="eyebrow">just so you know</div>
+  <h2>You mean so much to me</h2>
+  <p class="sub">A few little reminders, because one apology can't hold all the things I feel.</p>
+  <div class="reasons">
+   <div class="reason"><span>☁️</span><strong>You feel like my safe place.</strong></div>
+   <div class="reason"><span>🌷</span><strong>Your happiness matters to me.</strong></div>
+   <div class="reason"><span>✨</span><strong>You make ordinary days special.</strong></div>
+   <div class="reason"><span>💗</span><strong>I'm grateful that you're in my life.</strong></div>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="wrap">
+  <div class="eyebrow">one tiny question</div>
+  <h2>Are you still mad at me?</h2>
+  <div class="heart">🥺</div>
+  <p class="prompt">You can be honest. I promise I'll listen.</p>
+  <div class="answer">
+   <button class="btn" onclick="reply('I understand, my love. You have every right to feel how you feel. I’m here when you’re ready. ♡')">A little bit 😤</button>
+   <button class="btn secondary" onclick="reply('That makes me so happy, but I still want to make things right. Come here, kuchupuchu. 💗')">Not anymore 🥹</button>
+  </div>
+  <div id="response" aria-live="polite"></div>
+ </div>
+</section>
+<section class="soft">
+ <div class="wrap">
+  <div class="eyebrow">a final little surprise</div>
+  <h2>There's one more thing...</h2>
+  <p class="sub">Tap the little envelope. I tucked one last message inside.</p>
+  <div class="envelope" role="button" tabindex="0" aria-label="Open the love note" onclick="openNote()" onkeydown="if(event.key==='Enter'||event.key===' '){openNote()}"></div>
+  <div class="final-note card" id="finalNote">
+   <div class="heart">💌</div>
+   <h2 style="font-size:32px">It's you. Still you.</h2>
+   <p>I don't expect everything to become perfect in a second. I just want us to keep choosing kindness, honesty, and each other. I'm sorry, kuchupuchu. Whenever you're ready, I'd love a chance to make you smile again. ♡</p>
+   <p class="signature">I love you, more than these little words can say.</p>
+  </div>
+ </div>
+</section>
+</main>
+<footer>made with a soft heart, just for you ♡</footer>
+<script>
+function reply(message){document.getElementById('response').textContent=message}
+function openNote(){document.getElementById('finalNote').classList.add('show');document.getElementById('finalNote').scrollIntoView({behavior:'smooth',block:'center'});burst()}
+function burst(){for(let i=0;i<18;i++){const h=document.createElement('span');h.textContent=['♡','💕','✿','💗'][Math.floor(Math.random()*4)];h.className='float';h.style.left=Math.random()*100+'%';h.style.fontSize=(15+Math.random()*20)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';document.getElementById('hearts').appendChild(h);setTimeout(()=>h.remove(),8500)}}
+setInterval(()=>{if(Math.random()>.35)burst()},6500);
+</script>
+</body>
+</html>
